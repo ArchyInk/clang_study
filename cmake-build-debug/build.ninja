@@ -73,6 +73,39 @@ build RPS.exe: C_EXECUTABLE_LINKER__RPS_Debug CMakeFiles/RPS.dir/RPS.c.obj
   TARGET_IMPLIB = libRPS.dll.a
   TARGET_PDB = RPS.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target bitSum
+
+
+#############################################
+# Order-only phony target for bitSum
+
+build cmake_object_order_depends_target_bitSum: phony || CMakeFiles/bitSum.dir
+
+build CMakeFiles/bitSum.dir/bitSum.c.obj: C_COMPILER__bitSum_Debug D$:/clion/c_study/bitSum.c || cmake_object_order_depends_target_bitSum
+  DEP_FILE = CMakeFiles\bitSum.dir\bitSum.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\bitSum.dir
+  OBJECT_FILE_DIR = CMakeFiles\bitSum.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target bitSum
+
+
+#############################################
+# Link the executable bitSum.exe
+
+build bitSum.exe: C_EXECUTABLE_LINKER__bitSum_Debug CMakeFiles/bitSum.dir/bitSum.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\bitSum.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = bitSum.exe
+  TARGET_IMPLIB = libbitSum.dll.a
+  TARGET_PDB = bitSum.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -101,6 +134,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build RPS: phony RPS.exe
 
+build bitSum: phony bitSum.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -109,7 +144,7 @@ build RPS: phony RPS.exe
 #############################################
 # Folder: D:/clion/c_study/cmake-build-debug
 
-build all: phony RPS.exe
+build all: phony RPS.exe bitSum.exe
 
 # =============================================================================
 # Built-in targets

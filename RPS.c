@@ -29,7 +29,7 @@ int RPS_core() {
 
     int RPS;
 //    指针，后面学，主要展示相同的尽量提炼出来。
-    char *RPS_str = "剪刀";
+    char *RPS_str;
     RPS = rand() % 2;
     if (RPS == 0) {
         RPS_str = "剪刀";

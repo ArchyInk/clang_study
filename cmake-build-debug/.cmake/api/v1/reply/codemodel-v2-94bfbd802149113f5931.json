@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "c",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -41,6 +43,13 @@
 					"id" : "RPS::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-RPS-Debug-6a42bedaf2478da7e1ca.json",
 					"name" : "RPS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bitSum::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bitSum-Debug-6eff910e7b95e67430c3.json",
+					"name" : "bitSum",
 					"projectIndex" : 0
 				}
 			]
