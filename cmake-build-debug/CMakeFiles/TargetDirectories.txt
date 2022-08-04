@@ -1,4 +1,0 @@
-D:/clion/c_study/cmake-build-debug/CMakeFiles/RPS.dir
-D:/clion/c_study/cmake-build-debug/CMakeFiles/bitSum.dir
-D:/clion/c_study/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/clion/c_study/cmake-build-debug/CMakeFiles/rebuild_cache.dir
