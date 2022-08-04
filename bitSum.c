@@ -24,19 +24,15 @@
 #include "stdio.h"
 
 int addDigits(int num) {
-    int sum = num;
-
-    while (sum >= 10) {
-        num = sum;
-        sum = 0;
-        while (num >= 10) {
+    while (num >= 10) {
+        int sum = 0;
+        while (num > 0) {
             sum += num % 10;
             num = num / 10;
         }
-        sum += num;
+        num = sum;
     }
-    return sum;
-
+    return num;
 //    数学方法
 //    return (num - 1) % 9 + 1;
 }
