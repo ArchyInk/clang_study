@@ -37,6 +37,7 @@ int addDigits(int num) {
     }
     return sum;
 
+//    数学方法
 //    return (num - 1) % 9 + 1;
 }
 
